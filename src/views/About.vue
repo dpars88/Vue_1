@@ -1,5 +1,7 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <!-- <h1>About</h1> -->
+    <br>
+    <p>This is a TodoList app built using Vue CLI and my first web app built using Vue</p>
   </div>
 </template>

@@ -8,7 +8,8 @@
 </template>
 
 <script>
-import { v4 as uuidv4 } from 'uuid';
+//import { v4 as uuidv4 } from 'uuid'; not needed anymore due to API not needing uuid
+
 export default {
     name: "AddTodo",
     data() {
@@ -20,7 +21,7 @@ export default {
         addTodo(e) {
             e.preventDefault();
             const newTodo = {
-                id: uuidv4(),
+                //id: uuidv4(), ----- removed due to note in above import line
                 title: this.title,
                 completed: false
             }

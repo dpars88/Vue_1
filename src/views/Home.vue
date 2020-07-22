@@ -25,7 +25,7 @@ export default {
     deleteTodo(id) {
       axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
         // eslint-disable-next-line no-unused-vars
-        .then(res => this.todos = this.todos.filter(todo => todo.id !== id))
+        .then(res => console.log(res))
         .catch(err => console.log(err));
     },
     addTodo(newTodo) {
